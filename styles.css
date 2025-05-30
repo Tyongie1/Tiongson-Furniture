@@ -1,0 +1,346 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body with wooden background */
+body {
+    background-image: url('bg1.jpg'); /* Ensure bg1.jpg is in C:\xampp\htdocs\tyongkoy_furnitures */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header (Logo and Navigation) for main_index.php */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigation Bar (for both nav and .navbar) */
+nav, .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+nav a, .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover, .navbar a:hover {
+    color: #ddd;
+}
+
+/* Welcome Section (main_index.php) */
+.welcome {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Featured Furniture Section (main_index.php and user_index.php) */
+.featured {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.featured h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.furniture-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.furniture-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    color: #333;
+}
+
+.furniture-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.furniture-item p {
+    padding: 10px;
+    font-size: 16px;
+    color: #6a0dad; /* Purple color for the furniture names */
+}
+
+.furniture-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a623; /* Orange color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.furniture-item a:hover {
+    background-color: #e69500;
+}
+
+/* Sign Up Button (main_index.php) */
+.signup-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f5a623; /* Orange color */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    background-color: #e69500;
+}
+
+/* General Container for Forms and Content (login.php, register.php, admin_login.php, admin_register.php, profile.php) */
+.container, .auth-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.container h2, .auth-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container p, .auth-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.container a, .auth-container a {
+    color: #f5a623; /* Orange color for links */
+    text-decoration: none;
+}
+
+.container a:hover, .auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling (login.php, register.php, admin_login.php, admin_register.php, admin_products.php) */
+form, .form-styled {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button, .btn-primary {
+    padding: 10px 20px;
+    background-color: #f5a623; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #e69500;
+}
+
+/* Error Message (login.php, register.php, admin_login.php, admin_register.php) */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* General Headings (cart.php, checkouts.php, user_index.php, orders.php, admin_products.php, admin_users.php) */
+h2, h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Tables (cart.php, checkouts.php, orders.php, admin_products.php, admin_users.php) */
+table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-collapse: collapse;
+    color: #333;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f5a623; /* Orange color for table headers */
+    color: #fff;
+}
+
+table td a {
+    color: #6a0dad; /* Purple color for links */
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+table td img {
+    width: 50px;
+    height: auto;
+}
+
+/* Checkout Link (cart.php) */
+p a {
+    color: #f5a623; /* Orange color for links */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Specific for cart.php checkout link */
+p a[href="checkout.php"] {
+    padding: 10px 20px;
+    background-color: #f5a623;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+p a[href="checkout.php"]:hover {
+    background-color: #e69500;
+}
+
+/* Footer (for the new register.php) */
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .furniture-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .furniture-item {
+        width: 80%;
+    }
+
+    .welcome, .container, .auth-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a, .navbar a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    table {
+        width: 100%;
+    }
+}
